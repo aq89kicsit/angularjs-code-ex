@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>GrepGui</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <script src="lib/angular.min.js"></script>
+    <script src="app/app.js"></script>
+    <style>
+        pre {
+            display: block;
+            padding: 0.5px;
+            margin: 0 0 0px;
+            font-size: 13px;
+            line-height: 1.42857143;
+            color: #333;
+            word-break: break-all;
+            word-wrap: break-word;
+            background-color: inherit;
+            border: 0px;
+            border-radius: 0px;
+        }
+    </style>
+</head>
+<body ng-app="grep" ng-controller="showSearchedText">
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-3">
+            <h3>A Tool to help find lines with certain strings in a big text block. </h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-3">
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" ng-model="case_sestive" ng-change="findValue()" name="case_sestive" id="case_sestive"> Case Senstive
+                </label>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" ng-model="general_fit" ng-change="findValue()" name="general_fit" id="general_fit"> General Fit
+                </label>
+            </div>
+            <div class="form-group">
+                <input  ng-model="searchString" ng-change="findValue()" type="text" class="form-control" name="search" id="search" placeholder="Search">
+            </div>
+            <textarea my-directive ng-model="item" ng-change="jsonDataChange()" class="form-control" rows="10" name="text_searched" placeholder="Text to be searched (Only json is acceptable note only for AQ)"></textarea>
+        </div>
+
+        <div class="col-lg-8 col-lg-offset-3">
+            <h2>Results</h2>
+            <!--<textarea class="form-control" rows="10" cols="4">{{item | json | searchFor : searchString}}</textarea>-->
+            <div style="max-height: 400px; overflow: auto;">
+                <table class="table table-striped">
+                    <tr ng-repeat="i in itemList">
+                        <td><pre>{{i.jNumber}}</pre></td>
+                        <td><pre>{{i.jContent}}</pre></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>

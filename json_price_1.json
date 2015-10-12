@@ -1,0 +1,77 @@
+{
+  "version": "1",
+  "artists": [
+    {
+      "name": "artist1name",
+      "jpeg": "../img/artist/artist1.jpg",
+      "albums": [
+        {
+          "type": "cd",
+          "title": "titlealbum1",
+          "subtitle": "subtitlealbum1",
+          "jpeg": "../img/album1.jpg",
+          "price": "12.00",
+          "anystring1": "anystring1album1",
+          "anystring2": "anystring2album1",
+          "id": "1"
+        },
+        {
+          "type": "cd",
+          "title": "titlealbum2",
+          "subtitle": "subtitlealbum2",
+          "jpeg": "../img/album2.jpg",
+          "price": "12.00",
+          "anystring1": "anystring1album2",
+          "anystring2": "anystring2album2",
+          "id": "2"
+        },
+        {
+          "type": "cd",
+          "title": "titlealbum3",
+          "subtitle": "subtitlealbum3",
+          "jpeg": "../img/album3.jpg",
+          "price": "13.00",
+          "anystring1": "anystring1album3",
+          "anystring2": "anystring2album3",
+          "id": "3"
+        }
+      ]
+    },
+    {
+      "name": "artist2name",
+      "jpeg": "../img/artist/artist1.jpg",
+      "albums": [
+        {
+          "type": "cd",
+          "title": "titlealbum4",
+          "subtitle": "subtitlealbum1",
+          "jpeg": "../img/album1.jpg",
+          "price": "12.00",
+          "anystring1": "anystring1album1",
+          "anystring2": "anystring2album1",
+          "id": "4"
+        },
+        {
+          "type": "cd",
+          "title": "titlealbum5",
+          "subtitle": "subtitlealbum2",
+          "jpeg": "../img/album2.jpg",
+          "price": "12.00",
+          "anystring1": "anystring1album2",
+          "anystring2": "anystring2album2",
+          "id": "5"
+        },
+        {
+          "type": "cd",
+          "title": "titlealbum6",
+          "subtitle": "subtitlealbum3",
+          "jpeg": "../img/album3.jpg",
+          "price": "13.00",
+          "anystring1": "anystring1album3",
+          "anystring2": "anystring2album3",
+          "id": "6"
+        }
+      ]
+    }
+  ]
+}
